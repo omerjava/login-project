@@ -1,5 +1,5 @@
 
-export const handlerRegister = () => {
+/* export const handlerRegister = () => {
 
     const parentElement = document.getElementById("displayScreen");
     
@@ -18,3 +18,5 @@ export const handlerRegister = () => {
     </form> `;
 
 };
+
+*/

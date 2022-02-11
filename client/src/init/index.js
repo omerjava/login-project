@@ -1,6 +1,6 @@
 // import { handlerRegister } from "../handlers/handlerRegister";
 
-import { data } from "../../data";
+// import { data } from "../../data";
 
 alert("hello");
 
@@ -22,8 +22,10 @@ const handlerRegister = () => {
         <input type="submit" id="submitBtn" value="Submit">
     </form></div> `;
 
-};
+}
 
+document.getElementById("registerBtn").addEventListener("click", handlerRegister);
+/*
 const handlerSubmit = () => {
 
     const usernameData = document.getElementById("username").value;
@@ -35,11 +37,10 @@ const handlerSubmit = () => {
     document.getElementById("displayScreen").innerHTML=`<div class="registerContainer"><h2>Greetings!</h2>
                                             <p>You can login now with your account information.</p></div> `;
 };
+*/
 
-document.getElementById("registerBtn").addEventListener("click", handlerRegister);
 
-
-document.getElementById("submitBtn").addEventListener("click", handlerSubmit);
+//document.getElementById("submitBtn").addEventListener("click", handlerSubmit);
 
 //document.getElementById("registerBtn").addEventListener("click", handlerRegister);
 
