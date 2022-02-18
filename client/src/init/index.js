@@ -64,6 +64,12 @@ const handlerSubmitRegister = () => {
     }
 
     data.users.push({username:usernameData,password:passwordData,birthday:birthdayData});
+
+    document.getElementById("username").value='';
+    document.getElementById("password").value='';
+    document.getElementById("passwordConfirm").value='';
+    document.getElementById("birthday").value='';
+
     document.getElementById("registerContainerId").style.display="none";
     document.getElementById("loginContainerId").style.display="none";
     document.getElementById("resultRegistration").style.display="inline";
@@ -94,8 +100,10 @@ const handlerSubmitLogin = () => {
     }
     if(data.loginStatus){
         document.getElementById("greetingId").innerHTML = `Welcome ${usernameLogin}!`;
-        document.getElementById("loginMessage").innerHTML="You are logged in!" 
+        document.getElementById("loginMessage").innerHTML="You are logged in!"; 
     }
+    document.getElementById("usernameLogin").value='';
+    document.getElementById("passwordLogin").value='';
     document.getElementById("loginContainerId").style.display="none";
 
 };
