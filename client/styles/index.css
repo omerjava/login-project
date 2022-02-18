@@ -1,15 +1,23 @@
 @import url('./other-file.css');
 #root {
-    width: 1200px;
+    min-width: 1000px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content:right;
 }
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.greeting p {
+    color:black;
+    font-weight: 800;
+    font-size: large;
+}
 
-#login {
-    width: 1200px;
-    height: 40px;
+.login-buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -18,6 +26,15 @@
     border: 1px solid black;
     width: 80px;
     height: 25px;
+}
+#loginMessage{
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
+.btn:hover {
+    background-color: black;
+    color: aliceblue;
 }
 
 .registerForm {
@@ -29,3 +46,28 @@
     justify-content: flex-end;
 
 }
+.registerContainer {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, 
+                rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+  }
+
+#registerContainerId {
+    display: none;
+}
+#loginContainerId {
+    display: none;
+}
+
+#resultRegistration {
+    display: none;
+    min-height: 200px;
+    width: 200px;
+}
+
+  
+  #submitBtn {
+    border: 1px solid black;
+  }

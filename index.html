@@ -10,15 +10,51 @@
   </head>
   <body>
     <div id="root">
-      <div id="login">
-        <input type="button" id="registerBtn" value="Register" />
-        <input type="button" value="Login" />
-        <input type="button" value="Logout" />
+      <div id="header">
+        <div class="greeting">
+          <p id="greetingId">Welcome!</p>
+        </div>
+        <div>
+          <div class="login-buttons">
+            <input type="button" class="btn" id="registerBtn" value="Register" />
+            <input type="button" class="btn" id="loginBtn" value="Login" />
+            <input type="button" class="btn" id="logoutBtn" value="Logout" />
+          </div>
+          <p id="loginMessage">You are not logged in.</p>
+        </div>
       </div>
-      <div class="registerForm" id="displayScreen"></div>
-
+      <div class="registerForm" id="displayScreen">
+        <div class="registerContainer" id="registerContainerId"><h2>Registration</h2>
+          <p>Enter your information please</p>
+          <form action="">
+              <label for="username">Username:</label><br>
+              <input type="text" id="username" name="username" placeholder="At least 4 characters"><br>
+              <label for="pwd">Password:</label><br>
+              <input type="password" id="password" name="password" placeholder="At least 4 characters"><br>
+              <label for="passwordConfirm">Confirm Password:</label><br>
+              <input type="password" id="passwordConfirm" name="passwordConfirm"><br>
+              <label for="birthday">Birthday:</label><br>
+              <input type="text" id="birthday" name="birthday" placeholder="12/02/1996"><br><br>
+              <input type="button" id="submitBtn" value="Send">
+              <p id="invalidEntryRegister"></p>
+          </form>
+        </div>
+        <div class="registerContainer" id="resultRegistration"><h2>Greetings!</h2>
+          <p>You can login now with your account information.</p>
+        </div> 
+        <div class="registerContainer" id="loginContainerId"><h2>Login</h2>
+          <p>Enter your information please</p>
+          <form action="">
+              <label for="username">Username:</label><br>
+              <input type="text" id="usernameLogin" name="username" placeholder="At least 4 characters"><br>
+              <label for="pwd">Password:</label><br>
+              <input type="password" id="passwordLogin" name="password" placeholder="At least 4 characters"><br><br>
+              <input type="button" id="loginSubmitBtn" value="OK"><br>
+              <p id="invalidEntryLogin"></p>
+          </form>
+        </div>
+      </div>
     </div>
-
     <script type="module" src="./client/src/init/index.js"></script>
   </body>
 </html>
